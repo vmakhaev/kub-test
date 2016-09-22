@@ -1,9 +1,7 @@
 FROM node
 
-ADD . /app
-
-WORKDIR /app
+COPY server.js .
 
 CMD node server.js
 
-EXPOSE 8000
+EXPOSE 3000
